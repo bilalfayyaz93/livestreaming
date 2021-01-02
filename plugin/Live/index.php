@@ -182,7 +182,7 @@ if (!empty($chat2) && !empty($chat2->useStaticLayout)) {
         <?php
         include $global['systemRootPath'] . 'view/include/footer.php';
         ?>
-        <script>            
+        <script>
             var flashvars = {server: "<?php echo Live::getServer(); ?>?p=<?php echo User::getUserPass(); ?>", stream: "<?php echo $trasnmition['key']; ?>"};
                 var params = {};
                 var attributes = {};
@@ -284,7 +284,7 @@ if (!empty($chat2) && !empty($chat2->useStaticLayout)) {
                                                 $('#enableWebCam').click(function () {
                                                     amIOnline();
                                                 });
-                                                
+
                                                 <?php
                                                 echo PlayerSkins::getStartPlayerJS("", "", true);
                                                 ?>
