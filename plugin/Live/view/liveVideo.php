@@ -16,8 +16,8 @@ $poster = Live::getPosterImage($livet['users_id'], $_REQUEST['live_servers_id'])
                 </button>
             </div>
             <div id="main-video" class="embed-responsive embed-responsive-16by9">
-                <video poster="<?php echo $global['webSiteRootURL']; ?><?php echo $poster; ?>?<?php echo filectime($global['systemRootPath'] . $poster); ?>" controls playsinline webkit-playsinline="webkit-playsinline" 
-                       class="embed-responsive-item video-js vjs-default-skin vjs-big-play-centered liveVideo vjs-16-9" 
+                <video poster="<?php echo $global['webSiteRootURL']; ?><?php echo $poster; ?>?<?php echo filectime($global['systemRootPath'] . $poster); ?>" controls playsinline webkit-playsinline="webkit-playsinline"
+                       class="embed-responsive-item video-js vjs-default-skin vjs-big-play-centered liveVideo vjs-16-9"
                        id="mainVideo">
                     <source src="<?php echo Live::getM3U8File($uuid); ?>" type='application/x-mpegURL'>
                 </video>

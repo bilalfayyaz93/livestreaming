@@ -161,11 +161,7 @@ if (!empty($chat2) && !empty($chat2->useStaticLayout)) {
                                 include $global['systemRootPath'] . 'plugin/Live/indexCol1.php';
                                 ?>
                             </div>
-                            <div class="<?php echo $col2Class; ?>" id="yptRightBar">
-                                <?php
-                                include $global['systemRootPath'] . 'plugin/Live/indexCol2.php';
-                                ?>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-4" id="indexCol2">
@@ -182,7 +178,7 @@ if (!empty($chat2) && !empty($chat2->useStaticLayout)) {
         <?php
         include $global['systemRootPath'] . 'view/include/footer.php';
         ?>
-        <script>            
+        <script>
             var flashvars = {server: "<?php echo Live::getServer(); ?>?p=<?php echo User::getUserPass(); ?>", stream: "<?php echo $trasnmition['key']; ?>"};
                 var params = {};
                 var attributes = {};
@@ -284,7 +280,7 @@ if (!empty($chat2) && !empty($chat2->useStaticLayout)) {
                                                 $('#enableWebCam').click(function () {
                                                     amIOnline();
                                                 });
-                                                
+
                                                 <?php
                                                 echo PlayerSkins::getStartPlayerJS("", "", true);
                                                 ?>
