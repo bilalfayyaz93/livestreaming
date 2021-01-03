@@ -153,16 +153,7 @@ if (!empty($chat2) && !empty($chat2->useStaticLayout)) {
                         ?>
                     </ul>
                 </div>
-                <div class="panel-body">
-                    <div class="col-lg-8" id="indexCol1">
 
-                    </div>
-                    <div class="col-lg-4" id="indexCol2">
-                        <?php
-                        include $global['systemRootPath'] . 'plugin/Live/indexCol3.php';
-                        ?>
-                    </div>
-                </div>
             </div>
         </div>
         <?php
