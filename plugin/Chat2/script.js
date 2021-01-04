@@ -112,7 +112,7 @@ function addMessage(id, from_users_id, name, message, messageFooter, isMe, prepe
                 $('#onlineList').append(element);
                 listGroupItemClick();
             }
-            name = "<a href='#' onclick='$(\"#chatItem" + from_users_id + "\").trigger(\"click\");'>" + name + "</a>";
+            name = "<a href='#' onclick='$(\"#chatItem" + from_users_id + "\").trigger(\"click\");'>" + name + " : </a>";
         }
     }
     $(template).attr('id', 'bubble' + id);
@@ -123,8 +123,8 @@ function addMessage(id, from_users_id, name, message, messageFooter, isMe, prepe
         $(template).addClass('banned');
     }
     $(template).find(".messageNameId").html(name);
-    $(template).find(".message").html(nl2br(message));
-    $(template).find(".messageFooter").html(messageFooter);
+    $(template).find(".message").html(message);
+    // $(template).find(".messageFooter").html(messageFooter);
     if (prepend) {
         $('#chatScreen').prepend(template);
     } else {

@@ -103,17 +103,17 @@ if(empty($sideAd) && !AVideoPlugin::loadPluginIfEnabled("Chat2")){
                             <center style="margin:5px;">
                                 <?php echo getAdsLeaderBoardTop(); ?>
                             </center>
-                        </div>  
+                        </div>
                         <div class="col-md-12">
                             <?php
                             require "{$global['systemRootPath']}plugin/Live/view/liveVideo.php";
                             ?>
-                        </div>  
+                        </div>
                         <div class="col-md-12">
                             <center style="margin:5px;">
                                 <?php echo getAdsLeaderBoardTop2(); ?>
                             </center>
-                        </div>  
+                        </div>
                     </div>
                     <?php
                 }
@@ -129,17 +129,17 @@ if(empty($sideAd) && !AVideoPlugin::loadPluginIfEnabled("Chat2")){
                                     <center style="margin:5px;">
                                         <?php echo getAdsLeaderBoardTop(); ?>
                                     </center>
-                                </div>  
+                                </div>
                                 <div class="col-md-12">
                                     <?php
                                     require "{$global['systemRootPath']}plugin/Live/view/liveVideo.php";
                                     ?>
-                                </div>  
+                                </div>
                                 <div class="col-md-12">
                                     <center style="margin:5px;">
                                         <?php echo getAdsLeaderBoardTop2(); ?>
                                     </center>
-                                </div>  
+                                </div>
                             </div>
                             <?php
                         }
@@ -150,16 +150,16 @@ if(empty($sideAd) && !AVideoPlugin::loadPluginIfEnabled("Chat2")){
                                     <?php
                                     if($lt->isAPrivateLive()){
                                     ?>
-                                    <i class="fas fa-lock"></i> 
+                                    <i class="fas fa-lock"></i>
                                     <?php
                                     }else{
                                     ?>
-                                    <i class="fas fa-video"></i> 
+                                    <i class="fas fa-video"></i>
                                     <?php
                                     }
                                     ?>
                                    <?php echo $liveTitle; ?>
-                                    
+
                                 </h1>
                                 <div class="col-xs-12 col-sm-12 col-lg-12"><?php echo $video['creator']; ?></div>
                                 <p><?php echo nl2br(textToLink($liveDescription)); ?></p>
@@ -200,16 +200,16 @@ if(empty($sideAd) && !AVideoPlugin::loadPluginIfEnabled("Chat2")){
                         </div>
                     </div>
                     <div class="col-lg-1"></div>
-                </div>  
+                </div>
 
             </div>
-        
+
 
             <script src="<?php echo $global['webSiteRootURL']; ?>js/video.js/video.min.js" type="text/javascript"></script>
             <?php
             echo AVideoPlugin::afterVideoJS();
             include $global['systemRootPath'] . 'view/include/footer.php';
-            ?>  
+            ?>
             <script src="<?php echo $global['webSiteRootURL']; ?>js/webui-popover/jquery.webui-popover.min.js" type="text/javascript"></script>
             <script src="<?php echo $global['webSiteRootURL']; ?>js/bootstrap-list-filter/bootstrap-list-filter.min.js" type="text/javascript"></script>
 

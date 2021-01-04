@@ -1,6 +1,5 @@
 
 .panel {
-    margin-bottom: 0;
     height: calc(100vh - 2px);
     max-height: 100vh;
     position: relative;
@@ -15,7 +14,9 @@
     left: 0;
     right: 0;
 }
-
+body .panel-footer{
+    background-color: #0a0a0a !important;
+}
 .panel-footer {
     position: absolute;
     right: 0;
@@ -24,6 +25,9 @@
 }
 .emojionearea, .emojionearea-editor{
     font-size: 1.2em;
+}
+.list-group-item {
+    display: none;
 }
 .panel-heading, .list-group-item{
     height: 50px;
@@ -45,6 +49,9 @@
     position: absolute;
     top: 10px;
 }
+div#chatPanel{
+    border: none !important;
+}
 .list-group-item{
     position: relative;
     border-width: 0 0 1px 0;
@@ -55,10 +62,20 @@
 }
 .messageNameId{
     font-weight: bold;
+    float: left;
 }
 
 .isChat .messageNameId{
     display: none;
+}
+.messageNameId a{
+    color :#09d261;
+}
+.message{
+    float: left;
+}
+body .chat{
+    background-color: #0a0a0a !important;
 }
 .messageFooter{
     text-align: right;
@@ -67,9 +84,9 @@
 }
 .them-bubble {
     position: relative;
-    background: #FFF;
     border-radius: .4em;
     float: left;
+    color:white;
     clear: both;
 }
 
@@ -126,7 +143,7 @@
 hgroup{
     margin: 5px 0;
     padding: 5px 10px;
-    max-width: 80%;
+    max-width: 100%;
     min-width: 20px;
 }
 .badge{
@@ -171,7 +188,6 @@ hgroup{
     width: 100%;
     position: absolute;
     bottom: 0;
-    border: 1px solid #ddd;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -184,6 +200,7 @@ hgroup{
     border-top-width: 0;
     border-bottom-width: 0;
     border-right-width: 0;
+    background-color: #0a0a0a;
 }
 #divRooms{
     transition: all 0.3s;
@@ -243,7 +260,6 @@ hgroup{
 
 @media screen and (max-width: 768px) {
     #divChatInput{
-        padding-right: 2px;
     }
     #divSubmitChat{
         padding-left: 2px;
@@ -273,4 +289,7 @@ hgroup{
     #divChat{
         width: 100%;
     }
+}
+.messageFooter{
+    display:none;
 }
